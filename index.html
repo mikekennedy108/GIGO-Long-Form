@@ -56,13 +56,18 @@
   Get the GIGO Method — $27
 </a>
 <script>
-  document.getElementById('buy').addEventListener('click', function (e) {
-    e.preventDefault();
-    // If Slide is available, open it; otherwise fall back to full-page
-    if (window.SamCartSlide && typeof SamCartSlide.open === 'function') {
-      SamCartSlide.open(this.href, { side: 'left' });
-    } else {
-      window.location.href = this.href;
+  window.addEventListener('load', function () {
+    var btn = document.getElementById('buy');
+    if (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        // If Slide is available, open it; otherwise fall back to full-page
+        if (window.SamCartSlide && typeof SamCartSlide.open === 'function') {
+          SamCartSlide.open(this.href, { side: 'left' });
+        } else {
+          window.location.href = this.href;
+        }
+      });
     }
   });
 </script>
