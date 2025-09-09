@@ -52,9 +52,21 @@
       <h1 class="headline">Failed Once, But Never Again.</h1>
       <p class="sub">Pass your next exam with the proven shortcut for multiple-choice tests. Works across real estate, nursing, insurance, IT, licensing, and more.</p>
 
-<a href="https://alfredomarinara.mysamcart.com/checkout/the-gigo-method#samcart-slide-open-left" class="cta">
+<a id="buy" href="https://alfredomarinara.mysamcart.com/checkout/the-gigo-method" class="cta">
   Get the GIGO Method — $27
 </a>
+<script>
+  document.getElementById('buy').addEventListener('click', function (e) {
+    e.preventDefault();
+    // If Slide is available, open it; otherwise fall back to full-page
+    if (window.SamCartSlide && typeof SamCartSlide.open === 'function') {
+      SamCartSlide.open(this.href, { side: 'left' });
+    } else {
+      window.location.href = this.href;
+    }
+  });
+</script>
+
   
  
       <div class="note">Instant access. 30‑day money‑back guarantee.</div>
