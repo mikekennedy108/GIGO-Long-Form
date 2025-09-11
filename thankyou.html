@@ -1,20 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thanks – Your Guide Is On The Way</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thanks — Your Guide Is On The Way</title>
+  <meta name="description" content="Thanks! Your free Exam Mistakes guide is on the way to your inbox." />
   <style>
-    body { font-family: sans-serif; background:#f6f3ff; color:#2b174b; text-align:center; padding:50px; }
-    h1 { font-size:2em; margin-bottom:20px; }
-    p { font-size:1.1em; margin-bottom:10px; }
-    a { display:inline-block; margin-top:20px; padding:12px 24px; background:#b8860b; color:#fff; text-decoration:none; border-radius:6px; font-weight:bold; }
+    :root{
+      --purple:#2b174b;
+      --gold:#b8860b;
+      --ink:#2b174b;
+      --paper:#f6f3ff;
+      --muted:#5a5470;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.55;
+      padding: 42px 16px;
+      display:flex;align-items:center;justify-content:center;min-height:100vh;
+    }
+    .wrap{max-width:780px;width:100%}
+    .card{
+      background:#fff;border:1px solid #e7defd;border-radius:16px;padding:28px;
+      box-shadow: 0 8px 28px rgba(43,23,75,.08);
+      text-align:center;
+    }
+    h1{margin:0 0 10px;font-size:clamp(24px,4.5vw,34px)}
+    .sub{color:var(--muted);margin:4px 0 14px}
+    .note{font-size:14px;color:var(--muted)}
+    .cta{
+      display:inline-block;background:var(--gold);color:#fff;text-decoration:none;
+      font-weight:800;border-radius:999px;padding:12px 20px;margin-top:16px;
+      box-shadow:0 6px 16px rgba(184,134,11,.28);
+    }
+    .cta:hover{opacity:.92}
+    .row{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:center;margin-top:18px}
+    .img{
+      width:100%;border-radius:12px;border:1px solid #efe9ff;background:#fbf9ff;object-fit:cover;
+    }
+    .footer{margin-top:16px;text-align:center;font-size:12px;color:#70698a}
+    @media (max-width:860px){.row{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <h1>Thanks! Your Free Guide Is On Its Way</h1>
-  <p>Check your inbox in the next minute for <strong>“Here’s your Exam Mistakes guide.”</strong></p>
-  <p>If you don’t see it, check Promotions/Spam or email <a href="mailto:support@passanytest.net">support@passanytest.net</a>.</p>
-  <a href="https://alfredomarinara.mysamcart.com/checkout/the-gigo-method#samcart-slide-open-left">Ready to Pass Faster? Get the GIGO Method – $27</a>
+  <main class="wrap">
+    <section class="card" aria-label="Thank you">
+      <h1>Thanks! Your Free Guide Is On The Way 📩</h1>
+      <p class="sub">Check your inbox for <strong>“Here’s your Exam Mistakes guide.”</strong> It should arrive in the next minute.</p>
+
+      <div class="row">
+        <img src="passed.png" alt="You can pass on your next attempt" class="img">
+        <div>
+          <p class="note">If you don’t see the email, check Promotions/Spam or search for the subject line above.<br>
+          Need help? Email <a href="mailto:support@passanytest.net">support@passanytest.net</a>.</p>
+
+          <!-- Soft upsell (same trusted SamCart link you already use) -->
+          <a class="cta" href="https://alfredomarinara.mysamcart.com/checkout/the-gigo-method#samcart-slide-open-left" aria-label="Get The GIGO Method for $27">
+            Ready to pass faster? Get the GIGO Method — $27
+          </a>
+
+          <p class="note" style="margin-top:10px;">30-day money-back guarantee • Instant access</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">© The GIGO Method. All rights reserved.</div>
+  </main>
 </body>
 </html>
