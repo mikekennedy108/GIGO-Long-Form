@@ -139,14 +139,13 @@ function calc(){
   document.getElementById('curText').innerHTML = curHTML;
   document.getElementById('altText').innerHTML = altHTML;
 
-  const utm = new URLSearchParams({
-    utm_source: 'calculator',
-    utm_medium: 'cta',
-    utm_campaign: 'gigo',
-    exam: document.getElementById('exam').value || ''
-  }).toString();
-  const checkoutURL = 'https://alfredomarinara.mysamcart.com/the-gigo-method' + '?' + utm;
-  document.getElementById('ctaLink').href = checkoutURL;
+  <a id="ctaLink"
+   href="https://alfredomarinara.mysamcart.com/checkout/the-gigo-method"
+   class="btn-primary"
+   style="display:inline-block;text-decoration:none;">
+  Unlock the System — $27 →
+</a>
+
 
   document.getElementById('results').style.display = 'grid';
 }
