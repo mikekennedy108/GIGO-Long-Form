@@ -46,6 +46,8 @@
     #gigo .foot-cta .cta{background:#b8860b}
     #gigo .muted{opacity:.85}
     #gigo .small{font-size:12px}
+/* Prevent clipping on selected images only */
+#gigo img.no-clip { width:100%; max-width:100vw; height:auto; display:block; }
 
     /* Estimator */
     #gigo .estimator{background:#fff;border:1px solid #ece8fb;border-radius:14px;padding:18px}
@@ -99,7 +101,7 @@
     <!-- ORIGIN STORY -->
     <div class="row" style="margin-top:26px;">
       <img src="https://raw.githubusercontent.com/mikekennedy108/GIGO-Long-Form/main/struggling.png"
-     alt="Struggling with exam" style="max-width:600px;display:block;margin:20px auto;">
+     alt="Struggling with exam" class="no-clip" style="display:block;margin:20px auto;">
 
       <div class="col card">
         <h3 class="section-title">The 30-Minute Turning Point</h3>
@@ -115,7 +117,8 @@
         <p>Delores failed her licensing exam <strong>9 times</strong>. Confidence gone. I shared GIGO. On her very next try, she passed — easily. The same pattern repeated for others across different exams.</p>
       </div>
       <img src="https://raw.githubusercontent.com/mikekennedy108/GIGO-Long-Form/main/passed.png"
-     alt="Student passed exam" style="max-width:600px;display:block;margin:20px auto;">
+     alt="Student passed exam" class="no-clip" style="display:block;margin:20px auto;">
+
     </div>
 
     <!-- WHO IT'S FOR -->
