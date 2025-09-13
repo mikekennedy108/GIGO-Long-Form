@@ -1,0 +1,20 @@
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Builds & logs
+node_modules/
+dist/
+build/
+*.log
+
+# Secrets & private data
+.env
+*.key
+*.pem
+service-account*.json
+*.csv
+recordings/
+exports/
