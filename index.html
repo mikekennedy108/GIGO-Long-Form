@@ -77,6 +77,22 @@
   font-size: 1.05rem;
   line-height: 1.65;
 }
+   /* Fix text bleed on mobile */
+body {
+  padding-top: 1.5rem;
+}
+
+/* Improve mobile text size for cards and post-card paragraphs */
+@media (max-width: 768px) {
+  .card p, .card h3, .card li, #gigo .card p {
+    font-size: 1.1rem !important;
+    line-height: 1.6;
+  }
+  #gigo .card {
+    padding: 1.2em;
+  }
+}
+ 
   </style>
 
   <div class="wrap">
